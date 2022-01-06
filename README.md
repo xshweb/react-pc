@@ -23,9 +23,3 @@ yarn build:stg
 ```
 yarn build:prd
 ```
-
-### 不检查 eslint
-
-```
-git commit --no-verify -m "xxx"
-```
