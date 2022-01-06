@@ -1,0 +1,33 @@
+.head-menus {
+  display: flex;
+  margin-bottom: 0;
+  .head-menu {
+    margin-right: 2px;
+    flex-shrink: 0;
+    .head-menu-a {
+      cursor: pointer;
+      display: block;
+      padding: 0 15px;
+      font-size: 14px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 600;
+      span {
+        margin-left: 6px;
+      }
+    }
+    .head-menu-a:hover {
+      background: rgba(0, 0, 0, 0.1);
+      color: #f6f6f6;
+    }
+    &.active {
+      .head-menu-a {
+        background: rgba(0, 0, 0, 0.1);
+        color: #f6f6f6;
+      }
+    }
+  }
+}

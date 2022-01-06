@@ -1,0 +1,209 @@
+.page {
+  width: 100%;
+  background-color: #fff;
+  min-height: calc(100vh - 189px);
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+.searchform-wrapper {
+  padding-bottom: 20px;
+  &.report {
+    padding: 20px 24px 20px;
+    background-color: #fff;
+  }
+}
+
+.operation-wrapper {
+  padding-bottom: 20px;
+}
+
+.table-wrapper {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  &.report {
+    margin-top: 20px;
+    padding: 0;
+  }
+}
+.pagination-wrapper {
+  text-align: right;
+}
+.page-padding-bottom {
+  padding-bottom: 20px;
+}
+
+.power-wrapper {
+  background-color: #fff;
+  min-height: calc(100vh - 189px);
+  padding-top: 100px;
+}
+
+// chart-pag
+
+.chart-page {
+  margin-bottom: 30px;
+  .chart-title {
+    width: 150px;
+    height: 30px;
+    line-height: 27px;
+    border: 1px solid #1890ff;
+    border-radius: 28px;
+    text-align: center;
+    margin-bottom: 5px;
+    .title-span {
+      font-size: 15px;
+      margin-left: 6px;
+      color: #1890ff;
+      font-weight: 600;
+    }
+  }
+  .chart-tips {
+    margin-bottom: 40px;
+    color: red;
+    font-size: 12px;
+  }
+  .chart-component {
+    padding: 0 30px;
+  }
+}
+
+// Report page
+.report-page {
+  padding: 0;
+  background-color: #f0f2f5;
+  .row-box-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .row-box {
+    display: flex;
+    margin-bottom: 15px;
+    .row-title {
+      width: 70px;
+    }
+    .row-content {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+      .row-li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .card-ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .card-li {
+      width: 32%;
+      padding-top: 24px;
+      background-color: #fff;
+      cursor: pointer;
+      border: 1px solid #f0f0f0;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      margin-right: 2%;
+      box-sizing: border-box;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      .card-title {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 24px;
+        line-height: 1.5;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 16px;
+        color: #000;
+        font-weight: 600;
+      }
+      .card-image {
+        display: block;
+        width: 100%;
+        margin: 15px auto;
+        .origin-image {
+          display: block;
+          width: 100%;
+          // background-repeat: no-repeat;
+          // background-position: 0 0;
+          // background-size: cover;
+          // margin: 0 auto;
+        }
+      }
+      .card-des {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 24px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        .des {
+          color: #666;
+        }
+      }
+      .card-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid #f0f0f0;
+        padding: 10px 24px;
+        box-sizing: border-box;
+        .tags {
+          flex: 1;
+          display: flex;
+          flex-wrap: wrap;
+          flex-shrink: 0;
+          .tag {
+            padding: 0 5px;
+            line-height: 1;
+            margin-bottom: 6px;
+            position: relative;
+            &::after {
+              position: absolute;
+              content: ' ';
+              width: 1px;
+              top: 2px;
+              right: 0;
+              bottom: 0;
+              background-color: #000;
+            }
+            &:last-child {
+              &::after {
+                background-color: transparent;
+              }
+            }
+          }
+          .btn {
+            width: 80px;
+            text-align: right;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.form-item-required {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 12px;
+  &::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 12px;
+    line-height: 1;
+    content: '*';
+    font-family: 'SimSun, sans-serif'
+  }
+}
